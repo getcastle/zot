@@ -1,0 +1,41 @@
+zot - minimal screenshot utility
+================================
+
+zot is a minimal screenshot utility that captures your screen and
+saves it as PNG. It does one thing and does it well.
+
+
+Requirements
+------------
+- Zig 0.15
+- X11
+- libpng
+
+
+Installation
+------------
+Enter the following command to build and install zot
+(if necessary as root):
+
+    make clean install
+
+
+Running zot
+-----------
+Simply invoke the 'zot' command:
+
+    zot
+
+This will capture your entire screen and save it to zot.png.
+
+
+Options
+-------
+    -o <file>     output file (default: zot.png)
+    -q <0-9>      compression quality (default: 9)
+
+Examples:
+
+    zot -o screenshot.png
+    zot -q 5
+    zot -o ~/Pictures/screen.png -q 9
